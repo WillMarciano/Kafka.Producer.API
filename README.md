@@ -29,9 +29,22 @@ isso irá rodar o projeto na porta 5001.
 
 Para testar a API, pode ser feito pelo Postman ou Insomnia
 
-abra o Postman e faça uma requisição POST para a URL `http://localhost:5001/?message=teste` passando a mensagem que deseja enviar no header.
+abra o Postman e faça uma requisição POST para a URL `http://localhost:5001` passando a mensagem que deseja enviar no corpo da requisição.
 
-![image](https://github.com/WillMarciano/Kafka.Producer.API/assets/34887614/f4423fef-282f-43d7-9f4d-4309acabb4c0)
+json de exemplo:
+
+```json
+{
+	"de": "Will",
+	"para": "Marciano",
+	"assunto": "Teste"
+}
+```
+
+
+
+![image](https://github.com/WillMarciano/Kafka.Producer.API/assets/34887614/aa72aa18-7aaa-4e78-af03-07bb2673ab6b)
+
 
 
 ## Visualizando as mensagens no KafDrop
@@ -39,7 +52,4 @@ abra o Postman e faça uma requisição POST para a URL `http://localhost:5001/?
 Para visualizar as mensagens no KafDrop, acesse o endereço `http://localhost:19000/` e selecione o tópico que deseja visualizar as mensagens.
 obs: Verificar a porta que o KafDrop está rodando, pois pode ser diferente da porta 19000.
 
-![image](https://github.com/WillMarciano/Kafka.Producer.API/assets/34887614/b6830325-362f-4f35-8e8e-98b38f8fd3a2)
-
-
-
+![image](https://github.com/WillMarciano/Kafka.Producer.API/assets/34887614/bd2bedeb-eb70-4a9d-ba63-696f7a3eada0)

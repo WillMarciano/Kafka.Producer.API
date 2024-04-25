@@ -1,4 +1,5 @@
 using Confluent.Kafka;
+using System.Text.Json;
 
 namespace Kafka.Producer.API
 {
@@ -21,13 +22,13 @@ namespace Kafka.Producer.API
             _logger = logger;
         }
 
-        public async Task<string> SendMessage(string message)
+        public async Task<string> SendMessage(TemplateRequest template)
         {
             var topic = _configuration.GetSection("KafkaConfig:TopicName").Value;
             try
             {
                 using var producer = new ProducerBuilder<Null, string>(_producerConfig).Build();
-
+                var message = JsonSerializer.Serialize(template);
                 var result = await producer.ProduceAsync(topic, new Message<Null, string> { Value = message });
                 var mensagem = "Status:" + result.Status + " Message:" + message;
                 _logger.LogInformation(mensagem);
@@ -36,8 +37,9 @@ namespace Kafka.Producer.API
             }
             catch (ProduceException<Null, string> e)
             {
-                _logger.LogError($"Delivery failed: {e.Error.Reason}");
-                return $"Delivery failed: {e.Error.Reason}";
+                var erroMensagem = $"Entrega Falhou: {e.Error.Reason}";
+                _logger.LogError(e, erroMensagem);
+                return erroMensagem;
             }
         }
     }

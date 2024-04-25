@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<ProducerService>();
 var app = builder.Build();
 
-app.MapPost("/", async ([FromServices] ProducerService service, [FromQuery] string message) =>
+app.MapPost("/", async ([FromServices] ProducerService service, [FromBody] TemplateRequest message) =>
 {    
     return await service.SendMessage(message);
 });
