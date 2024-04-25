@@ -31,7 +31,7 @@ Para testar a API, pode ser feito pelo Postman ou Insomnia
 
 abra o Postman e faça uma requisição POST para a URL `http://localhost:5001` passando a mensagem que deseja enviar no corpo da requisição.
 
-json de exemplo:
+json da chamada tem que ter esses campos, "de", "para" e "assunto".
 
 ```json
 {
