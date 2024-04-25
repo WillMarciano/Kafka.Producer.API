@@ -6,8 +6,8 @@ A API de produtor do Kafka é responsável por enviar mensagens para um tópico 
 
 - [Dotnet Core 8.0](https://dotnet.microsoft.com/download/dotnet/3.1) - SDK do Dotnet Core
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) - Caso deseje rodar por meio de containers
-- [kafka](https://kafka.apache.org/quickstart) - Para instalar o Kafka
-- [obsidiandynamics/kafdrop](https://github.com/obsidiandynamics/kafdrop) - FrontEnd para visualizações das Mensagens no Kafka
+- [Kafka](https://kafka.apache.org/quickstart) - Para instalar o Kafka
+- [Kafdrop](https://github.com/obsidiandynamics/kafdrop) - FrontEnd para visualizações das Mensagens no Kafka
 - [ZooKeeper](https://zookeeper.apache.org/) - Zookeeper é um serviço de coordenação distribuída para Apache Kafka
 
 
@@ -44,6 +44,6 @@ obs: Verificar a porta que o KafDrop está rodando, pois pode ser diferente da p
 
 ## Autor
 
-- **Willian Marciano** - [willMarciano](https://github.com/WillMarciano)
+- **Willian Marciano** - [WillMarciano](https://github.com/WillMarciano)
 
 
