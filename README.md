@@ -4,7 +4,7 @@ A API de produtor do Kafka é responsável por enviar mensagens para um tópico 
 
 ## Dependências do projeto
 
-- [Dotnet Core 8.0](https://dotnet.microsoft.com/download/dotnet/3.1) - SDK do Dotnet Core
+- [Dotnet Core 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) - SDK do Dotnet Core
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) - Caso deseje rodar por meio de containers
 - [Kafka](https://kafka.apache.org/quickstart) - Para instalar o Kafka
 - [Kafdrop](https://github.com/obsidiandynamics/kafdrop) - FrontEnd para visualizações das Mensagens no Kafka
