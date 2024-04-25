@@ -42,8 +42,4 @@ obs: Verificar a porta que o KafDrop está rodando, pois pode ser diferente da p
 ![image](https://github.com/WillMarciano/Kafka.Producer.API/assets/34887614/b6830325-362f-4f35-8e8e-98b38f8fd3a2)
 
 
-## Autor
-
-- **Willian Marciano** - [WillMarciano](https://github.com/WillMarciano)
-
 
