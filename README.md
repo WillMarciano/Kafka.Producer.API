@@ -1,10 +1,10 @@
 # Kafka.Producer.API
 
-A API de produtor do Kafka é responsável por enviar mensagens para um tópico do Kafka. Para isso, 
-e chamar o método `SendMessage` passando a mensagem a ser enviada.
+A API de produtor do Kafka é responsável por enviar mensagens para um tópico do Kafka.
 
 ## Dependências do projeto
 
+- [Dotnet Core 8.0](https://dotnet.microsoft.com/download/dotnet/3.1) - SDK do Dotnet Core
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) - Caso deseje rodar por meio de containers
 - [kafka](https://kafka.apache.org/quickstart) - Para instalar o Kafka
 - [obsidiandynamics/kafdrop](https://github.com/obsidiandynamics/kafdrop) - FrontEnd para visualizações das Mensagens no Kafka
